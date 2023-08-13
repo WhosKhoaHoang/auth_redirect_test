@@ -1,6 +1,13 @@
-import '@/styles/globals.css'
+import { AuthProvider } from "@/components/AuthContext";
+import { AuthInterceptor } from "@/components/AuthInterceptor";
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <AuthProvider>
+      {/* <AuthInterceptor> */}
+      <Component {...pageProps} />
+      {/* </AuthInterceptor> */}
+    </AuthProvider>
+  )
 }
