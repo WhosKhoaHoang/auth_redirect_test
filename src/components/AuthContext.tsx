@@ -5,8 +5,11 @@ import { cookies } from 'next/headers'
 // . You were running into an infinite redirect loop
 // . Figure out how to not run into that infinite redirect loop
 
-// Helpful websites for figuring this problem out
-
+// Helpful websites for figuring this problem out:
+// https://jools.dev/server-side-auth-with-nextjs-context-and-hooks
+// https://www.mikealche.com/software-development/how-to-implement-authentication-in-next-js-without-third-party-libraries
+// https://blog.bitsrc.io/understanding-dependencies-in-useeffect-7afd4df37c96
+// https://stackoverflow.com/questions/74961209/how-to-detect-when-redirect-happens-in-react
 
 // define the props
 type Auth = true | false
