@@ -34,7 +34,7 @@ export const AuthProvider = (props: PropsWithChildren) => {
         // console.log(!isAuthenticated && cookieValue === "")
         // console.log("\n\n")
 
-        // if (!isAuthenticated && counter < 2) {
+        // if (!isAuthenticated && counter < 2) { // NOTE: Using this counter approach will cause an infinite redirect loop...
         // if (!isAuthenticated && cookieValue === "") {
         if (cookieValue === "") {
             console.log("Dude, you gotta sign in...")
