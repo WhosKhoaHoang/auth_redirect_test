@@ -22,7 +22,6 @@ export const AuthContext = createContext<AuthState | null>(null);
 
 export const AuthProvider = (props: PropsWithChildren) => {
     const [isAuthenticated, setisAuthenticated] = useState<Auth>(false);
-    const [counter, setCounter] = useState(0);
 
     useEffect(()=> {
         let cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)abc123\s*\=\s*([^;]*).*$)|^.*$/, "$1");

@@ -9,6 +9,7 @@ export const AuthInterceptor: FC<React.PropsWithChildren> = ({children}) => {
 	const context = useContext(AuthContext);
 
 	useEffect(() => {
+		console.log("Confirming if you're signed in...")
 		console.log(context?.isAuthenticated)
 	})
 
